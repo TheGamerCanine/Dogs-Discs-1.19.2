@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "dogsdiscs",
+  "version": "${version}",
+
+  "name": "Dog's Discs",
+  "description": "My own little mod adding a few different music discs to the game from my buddies.",
+  "authors": [
+    "TheGamerCanine"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.thegamercanine.dogsdiscs.DogsDiscs"
+    ]
+  },
+  "mixins": [
+    "dogsdiscs.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
